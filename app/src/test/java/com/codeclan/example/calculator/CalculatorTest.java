@@ -33,4 +33,9 @@ public class CalculatorTest {
     public void testCanDivide() {
         assertEquals(4, calculator.divide(8, 2));
     }
+
+    @Test
+    public void testCanMultiply() {
+        assertEquals(4, calculator.multiply(2, 2));
+    }
 }
