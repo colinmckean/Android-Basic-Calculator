@@ -15,8 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ResultActivity"
-            android:parentActivityName=".CalculatorInputActivity"></activity>
+        <activity
+            android:name=".ResultActivity"
+            android:parentActivityName=".CalculatorInputActivity">
+
+        </activity>
     </application>
 
 </manifest>

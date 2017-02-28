@@ -45,21 +45,29 @@ public class CalculatorInputActivity extends AppCompatActivity {
     }
 
     public void onSubButtonClicked(View view) {
+        int sums = calc.subtract(Integer.valueOf(numAinput.getText().toString()),
+                                 Integer.valueOf(numBinput.getText().toString()));
+        String answer = String.valueOf(sums);
         intent = new Intent(this, ResultActivity.class);
-        Log.i(btnLog, "Sub Button Clicked.");
+        intent.putExtra("answer", answer);
         startActivity(intent);
     }
 
     public void onDivButtonClicked(View view) {
+        int sums = calc.divide(Integer.valueOf(numAinput.getText().toString()),
+                               Integer.valueOf(numBinput.getText().toString()));
+        String answer = String.valueOf(sums);
         intent = new Intent(this, ResultActivity.class);
-        Log.i(btnLog, "Div Button Clicked.");
+        intent.putExtra("answer", answer);
         startActivity(intent);
     }
 
     public void onMultButtonClicked(View view) {
+        int sums = calc.multiply(Integer.valueOf(numAinput.getText().toString()),
+                                 Integer.valueOf(numBinput.getText().toString()));
+        String answer = String.valueOf(sums);
         intent = new Intent(this, ResultActivity.class);
-
-        Log.i(btnLog, "Mult Button Clicked.");
+        intent.putExtra("answer", answer);
         startActivity(intent);
     }
 }

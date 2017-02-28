@@ -12,12 +12,18 @@
     android:orientation="vertical">
 
     <TextView
+        android:text="The Answer to Life:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="26sp"
+        />
+
+    <TextView
         android:text="@string/resultText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="79dp"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="58dp"
         android:id="@+id/result_TextView"
+        android:textSize="36sp"
         />
 </LinearLayout>
