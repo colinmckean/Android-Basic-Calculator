@@ -8,13 +8,15 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class CalculatorInputActivity extends AppCompatActivity {
-    Calculator calc;
-    EditText numAinput;
-    EditText numBinput;
-    Button addBtn;
-    Button subBtn;
-    Button divBtn;
-    Button multBtn;
+    private Calculator calc;
+    private EditText numAinput;
+    private EditText numBinput;
+    private Button addBtn;
+    private Button subBtn;
+    private Button divBtn;
+    private Button multBtn;
+    private final String btnLog = "Button event";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,18 @@ public class CalculatorInputActivity extends AppCompatActivity {
     }
 
     public void onAddButtonClicked(View view) {
-        Log.i("Button Event", "Add Button Clicked");
+        Log.i(btnLog, "Add Button Clicked.");
+    }
+
+    public void onSubButtonClicked(View view) {
+        Log.i(btnLog, "Sub Button Clicked.");
+    }
+
+    public void onDivButtonClicked(View view) {
+        Log.i(btnLog, "Div Button Clicked.");
+    }
+
+    public void onMultButtonClicked(View view) {
+        Log.i(btnLog, "Mult Button Clicked.");
     }
 }

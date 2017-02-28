@@ -27,28 +27,31 @@
         android:hint="@string/enter_a_number"
         android:id="@+id/numB_EditText" />
 
-        <Button
-            android:text="@string/add"
-            android:layout_height="wrap_content"
-            android:id="@+id/add_Btn"
-            android:layout_width="match_parent"
-            android:onClick="onAddButtonClicked"/>
+    <Button
+        android:text="@string/add"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_Btn"
+        android:layout_width="match_parent"
+        android:onClick="onAddButtonClicked"/>
 
-        <Button
+    <Button
             android:text="@string/subtract"
             android:layout_height="wrap_content"
             android:id="@+id/sub_Btn"
-            android:layout_width="match_parent" />
+            android:layout_width="match_parent"
+        android:onClick="onSubButtonClicked"/>
 
-        <Button
+    <Button
             android:text="@string/divide"
             android:layout_height="wrap_content"
             android:id="@+id/div_Btn"
-            android:layout_width="match_parent" />
+            android:layout_width="match_parent"
+        android:onClick="onDivButtonClicked"/>
 
         <Button
             android:text="@string/multiply"
             android:layout_height="wrap_content"
             android:id="@+id/multi_Btn"
-            android:layout_width="match_parent" />
+            android:layout_width="match_parent"
+            android:onClick="onMultButtonClicked"/>
 </LinearLayout>
