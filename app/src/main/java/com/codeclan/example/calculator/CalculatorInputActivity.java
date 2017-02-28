@@ -16,7 +16,7 @@ public class CalculatorInputActivity extends AppCompatActivity {
     private Button subBtn;
     private Button divBtn;
     private Button multBtn;
-    Intent intent;
+    private Intent intent;
     private final String btnLog = "Button event";
 
 
@@ -35,8 +35,12 @@ public class CalculatorInputActivity extends AppCompatActivity {
     }
 
     public void onAddButtonClicked(View view) {
+        int sums = calc.add(Integer.valueOf(numAinput.getText().toString()),
+                            Integer.valueOf(numBinput.getText().toString()));
+        String answer = String.valueOf(sums);
         intent = new Intent(this, ResultActivity.class);
-        Log.i(btnLog, "Add Button Clicked.");
+        intent.putExtra("answer", answer);
+        Log.i("HERE I AM", answer);
         startActivity(intent);
 
     }
