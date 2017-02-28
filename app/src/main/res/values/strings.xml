@@ -5,4 +5,5 @@
     <string name="subtract">Subtract</string>
     <string name="divide">Divide</string>
     <string name="multiply">Multiply</string>
+    <string name="resultText">If you enter numbers your result will be shown here.</string>
 </resources>

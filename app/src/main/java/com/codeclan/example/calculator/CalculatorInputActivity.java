@@ -1,5 +1,6 @@
 package com.codeclan.example.calculator;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,6 +16,7 @@ public class CalculatorInputActivity extends AppCompatActivity {
     private Button subBtn;
     private Button divBtn;
     private Button multBtn;
+    Intent intent;
     private final String btnLog = "Button event";
 
 
@@ -33,18 +35,28 @@ public class CalculatorInputActivity extends AppCompatActivity {
     }
 
     public void onAddButtonClicked(View view) {
+        intent = new Intent(this, ResultActivity.class);
         Log.i(btnLog, "Add Button Clicked.");
+        startActivity(intent);
+
     }
 
     public void onSubButtonClicked(View view) {
+        intent = new Intent(this, ResultActivity.class);
         Log.i(btnLog, "Sub Button Clicked.");
+        startActivity(intent);
     }
 
     public void onDivButtonClicked(View view) {
+        intent = new Intent(this, ResultActivity.class);
         Log.i(btnLog, "Div Button Clicked.");
+        startActivity(intent);
     }
 
     public void onMultButtonClicked(View view) {
+        intent = new Intent(this, ResultActivity.class);
+
         Log.i(btnLog, "Mult Button Clicked.");
+        startActivity(intent);
     }
 }
