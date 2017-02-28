@@ -28,4 +28,9 @@ public class CalculatorTest {
     public void testCanSubtract() {
         assertEquals(4, calculator.subtract(6, 2));
     }
+
+    @Test
+    public void testCanDivide() {
+        assertEquals(4, calculator.divide(8, 2));
+    }
 }
