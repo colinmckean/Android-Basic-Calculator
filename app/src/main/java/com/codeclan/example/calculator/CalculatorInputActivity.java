@@ -29,4 +29,8 @@ public class CalculatorInputActivity extends AppCompatActivity {
         multBtn = (Button) findViewById(R.id.multi_Btn);
 
     }
+
+    public void onAddButtonClicked(View view) {
+        Log.i("Button Event", "Add Button Clicked");
+    }
 }
