@@ -40,7 +40,6 @@ public class CalculatorInputActivity extends AppCompatActivity {
         String answer = String.valueOf(sums);
         intent = new Intent(this, ResultActivity.class);
         intent.putExtra("answer", answer);
-        Log.i("HERE I AM", answer);
         startActivity(intent);
 
     }
