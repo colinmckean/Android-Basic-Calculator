@@ -18,5 +18,9 @@ public class CalculatorTest {
     public void before() {
         calculator = new Calculator();
     }
-//    divide, and multiply.
+
+    @Test
+    public void testCanAdd() {
+        assertEquals(4, calculator.add(2, 2));
+    }
 }
