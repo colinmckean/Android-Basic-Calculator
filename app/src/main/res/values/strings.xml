@@ -6,4 +6,5 @@
     <string name="divide">Divide</string>
     <string name="multiply">Multiply</string>
     <string name="resultText">If you enter numbers your result will be shown here.</string>
+    <string name="answer_heading">The Answer to Life:</string>
 </resources>
